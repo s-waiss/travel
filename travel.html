@@ -6,23 +6,33 @@
   <body>
 
     <div class="flex-col">
-
       <div class="flex">
-
         <div id = "travel-list" class="screen">
-          travel 1<br>
-          travel 1<br>
-          travel 1<br>
-        </div>
-      </div>
+          <div class="travel-item travel-header">
+              <div class="travel-name">שם נסיעה</div>
+              <div class="travel-price">מחיר</div>
+          </div>
 
-      <div class="flex">
+        </div>
+
+
 
         <div id = "travel-reg" class="screen">
-          name:<input/><br>
-          name:<input/><br>
-          name:<input/><br>
-          name:<input/><br>
+          <form>
+            First name:<br>
+            <input type="text" name="firstname"><br>
+            Last name:<br>
+            <input type="text" name="lastname"><br>
+            id:<br>
+            <input type="number" name="id"><br>
+            travelid:<br>
+            <input type="text" name="travelid"><br>
+            passengers:<br>
+            <input type="text" name="passengers"><br>
+            totalprice:<br>
+            <input type="number" name="id"><br>
+            <input type="submit">
+          </form>
         </div>
       </div>
 
@@ -33,18 +43,15 @@
           mr ploni to travel zirich<br>
           mr ploni to travel zirich<br>
           </div>
-        </div>
 
-          <div class="flex">
             <div id= "travel-lookup" class="screen">
           your name <input><br>
             mr ploni to travel zirich</br>
             </div>
           </div>
+</div>
 
-
-
-    </div>
+    <script src = "travel.js"></script>
 
 
   </body>

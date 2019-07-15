@@ -1,6 +1,14 @@
-body {width: 80%; margin:50px; auto;}
+body {width: 80%; margin:50px auto;}
 
-.flex{display:flex; justify-cont}
-.flex-col{disply:flex;
+.flex{display:flex; justify-content: space-between;}
+.flex-col{display: flex;
 justify-content:space-between;
-flex-direction: }
+flex-direction: column; }
+
+.screen {
+    background: lavender;
+    border: 3px dashed darkblue;
+    margin: 25px;
+    padding: 10px;
+    width:100%;
+}

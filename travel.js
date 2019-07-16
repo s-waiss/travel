@@ -7,13 +7,13 @@ let db = {
 
 let Travel = function Travel(name, price){
 this.Id = db.travelList.length == 0 ? 1 :
-  db.travelList[ db.travelList.lengte -1 ].Id + 1;
+  db.travelList[ db.travelList.length -1 ].Id + 1;
 
   this.Price = price;
   this.Name = name;
 
   this.getTotalPrice = function getTotalPrice(nomOfReg){
-    return nomOfReg * this.price
+    return nomOfReg * this.Price
   }
 }
 
@@ -22,9 +22,10 @@ Travel.getTravelsCount = function getTravelsCount(){
 }
 
 Travel.buildTravelHtml = function buildTravelHtml(travelObject){
-  return `<div class="travel-item" travel-id="${travelObject.Id}">
-          <div class= "travel-name">${travelObject.name}</div>
-          <div class= "travel-price">${travelObject.price}</div>
+  return `<div class="travel-item item" travel-Id="${travelObject.Id}">
+          <div class= "travel-Id">${travelObject.Id}</div>
+          <div class= "travel-name">${travelObject.Name}</div>
+          <div class= "travel-price">${travelObject.Price}</div>
           </div>`;
   }
 

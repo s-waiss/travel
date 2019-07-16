@@ -8,7 +8,8 @@
     <div class="flex-col">
       <div class="flex">
         <div id = "travel-list" class="screen">
-          <div class="travel-item travel-header">
+          <div class="travel-item item travel-header">
+              <div class="travel-id">קוד נסיעה</div>
               <div class="travel-name">שם נסיעה</div>
               <div class="travel-price">מחיר</div>
           </div>
@@ -19,40 +20,55 @@
 
         <div id = "travel-reg" class="screen">
           <form>
-            First name:<br>
-            <input type="text" name="firstname"><br>
-            Last name:<br>
-            <input type="text" name="lastname"><br>
-            id:<br>
-            <input type="number" name="id"><br>
+             name:<br>
+            <input type="text"><br>
+
+            pid:<br>
+            <input ><br>
             travelid:<br>
             <input type="text" name="travelid"><br>
             passengers:<br>
             <input type="text" name="passengers"><br>
-            totalprice:<br>
-            <input type="number" name="id"><br>
-            <input type="submit">
+
+            <button type="button">send</button>
           </form>
         </div>
       </div>
 
         <div class="flex">
           <div id= "reg-list" class="screen">
-          mr ploni to travel zirich<br>
-          mr ploni to travel zirich<br>
-          mr ploni to travel zirich<br>
-          mr ploni to travel zirich<br>
+            <div class="reg-item item" >
+              <div class= "c-Id">Id</div>
+              <div class= "c-Name">Name</div>
+              <div class= "c-PersonlId">PersonlId</div>
+              <div class= "c-Travelid">Travelid</div>
+              <div class= "c-passengers">passengers</div>
+              <div class= "c-total">travelTotal</div>
+            </div>
           </div>
 
+
             <div id= "travel-lookup" class="screen">
-          your name <input><br>
-            mr ploni to travel zirich</br>
-            </div>
+              <div>
+                  your name<input>
+                  <button type="button">find</button>
+              </div>
+              <div class="costumer-item item header">
+                  <div class="c-id">Id</div>
+                  <div class="c-name">Name</div>
+                  <div class="c-personalID">personalID</div>
+                  <div class="c-TravelId">TravelId</div>
+                  <div class="c-passengers">passengers</div>
+                  <div class="c-total">Total</div>
+              </div>
+              <div class="results"></div>
           </div>
 </div>
 
-    <script src = "travel.js"></script>
-
+    <script src="travel.js"></script>
+    <script src="customers.js"></script>
+    <script src="register.js"></script>
+    <script src="find.js"></script>
 
   </body>
   </html>

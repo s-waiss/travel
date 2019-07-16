@@ -12,3 +12,6 @@ flex-direction: column; }
     padding: 10px;
     width:100%;
 }
+
+.item{display: flex}
+.item > div {width: 20%}
